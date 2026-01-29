@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>অলঙ্কারবিন্দু - Alonkarbindu</title>
+  <link rel="shortcut icon" href="Image/Logo.jpeg" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="loader">
+    <span class="typewriter">Alonkarbindu....</span>
+  </div>
+  
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark nav-hidden">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="Image/Untitled-2.png" alt="Logo" />
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navMenu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav align-items-center gap-4">
+        <li class="nav-item"><a class="nav-link" href="Shop_Bangle.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="Collection.html">Collections</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item">
+          <a class="nav-link position-relative" href="#">
+            <i class="bi bi-bag"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Cart Sidebar -->
+<div id="cartSidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <span id="closeCart" class="close-cart">&times;</span>
+  </div>
+  <div id="cartItems" class="cart-items">
+    <p class="empty-cart">Your cart is empty.</p>
+  </div>
+  <div class="cart-footer">
+    <div class="customer-info">
+      <label for="customerName">Name:</label>
+      <input type="text" id="customerName" placeholder="Your name">
+  
+      <label for="customerMobile">Mobile Number:</label>
+      <input type="tel" id="customerMobile" placeholder="01XXXXXXXXX">
+  
+      <label for="customerAddress">Delivery Address:</label>
+      <textarea id="customerAddress" placeholder="Your full address"></textarea>
+    </div>
+  
+    <div class="delivery-option">
+      <label for="deliverySelect">Delivery Location:</label>
+      <select id="deliverySelect">
+        <option value="80">Inside Dhaka - ৳80</option>
+        <option value="120">Outside Dhaka - ৳120</option>
+      </select>
+    </div>
+  
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cartTotal">৳0</span>
+    </div>
+    <a id="checkoutBtn" href="#" target="_blank" class="checkout-btn">Checkout via WhatsApp</a>
+  </div>
+  
+</div>
+
+
+
+<section class="shop-section">
+    <div class="container">
+  
+      <!-- Header -->
+      <div class="shop-header animate-on-scroll">
+        <h2>About Us.</h2>
+        <p>
+          Alonkarbindu was born from a love for small details and quiet moments.
+          Every piece carries a story—of hands that craft with patience, of textures
+          shaped by care, and of emotions woven gently into form. We believe
+          adornment is more than beauty; it is comfort, memory, and self-expression.
+          Whether worn on an ordinary day or a meaningful one, Alonkarbindu is made
+          to move with you, to feel personal, and to remind you of the beauty in
+          being yourself.
+        </p>
+      </div>
+  
+      <!-- Image -->
+      <div class="about-image animate-on-scroll">
+        <img src="Image/logo-2.png" alt="About Alonkarbindu">
+      </div>
+  
+    </div>
+  </section>
+  
+  <section class="craft-section">
+    <div class="container">
+      <div class="craft-wrapper">
+  
+        <!-- Left Text -->
+        <div class="craft-text animate-on-scroll">
+          <h2>Art of Adornment.</h2>
+          <p>Crafted with care by skilled hands, our jewelry blends gentle textures with enduring quality. Every piece is made to stay close to you—through ordinary days and meaningful moments alike.
+            <p>
+          </p>
+        </div>
+  
+        <!-- Right Image -->
+        <div class="craft-image animate-on-scroll">
+          <img src="Image/Banner.jpeg" alt="Craft and Quality">
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+<!-- Footer Section -->
+<footer class="footer glass">
+  <div class="container">
+    <div class="footer-container">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <h2>Alonkarbindu.</h2>
+      </div>
+
+      <!-- Navigation -->
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <a href="Collection.html">Collection</a>
+        <a href="Shop_Bangle.html">Product</a>
+        <a href="About.html">About</a>
+      </div>
+
+      <!-- Info -->
+      <div class="footer-column">
+        <h4>Info</h4>
+        <a href="#">News</a>
+        <a href="Contact.html">Contact</a>
+        <a href="#">Support</a>
+      </div>
+
+      <!-- Social -->
+      <div class="footer-column">
+        <h4>Social</h4>
+        <a href="https://www.facebook.com/profile.php?id=61579115111554" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/_alonkarbindu_/?hl=en" target="_blank">Instagram</a>
+        <a href="#">Pinterest</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="footer-bottom">
+      <p>© 2026 Alonkarbindu. All rights reserved</p>
+      <p>Design by Adi</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
