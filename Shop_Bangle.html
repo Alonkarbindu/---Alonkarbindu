@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop - Alonkarbindu</title>
+  <link rel="shortcut icon" href="Image/Logo.jpeg" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="loader">
+    <span class="typewriter">Alonkarbindu....</span>
+  </div>
+  
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark nav-hidden">
+  <div class="container">
+    <a class="navbar-brand" href="home.html">
+      <img src="Image/Untitled-2.png" alt="Logo" />
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navMenu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav align-items-center gap-4">
+        <li class="nav-item"><a class="nav-link" href="">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="Collection.html">Collections</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item">
+          <a class="nav-link position-relative" href="#">
+            <i class="bi bi-bag"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Cart Sidebar -->
+<div id="cartSidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <span id="closeCart" class="close-cart">&times;</span>
+  </div>
+  <div id="cartItems" class="cart-items">
+    <p class="empty-cart">Your cart is empty.</p>
+  </div>
+  <div class="cart-footer">
+    <div class="customer-info">
+      <label for="customerName">Name:</label>
+      <input type="text" id="customerName" placeholder="Your name">
+  
+      <label for="customerMobile">Mobile Number:</label>
+      <input type="tel" id="customerMobile" placeholder="01XXXXXXXXX">
+  
+      <label for="customerAddress">Delivery Address:</label>
+      <textarea id="customerAddress" placeholder="Your full address"></textarea>
+    </div>
+  
+    <div class="delivery-option">
+      <label for="deliverySelect">Delivery Location:</label>
+      <select id="deliverySelect">
+        <option value="80">Inside Dhaka - ৳80</option>
+        <option value="120">Outside Dhaka - ৳120</option>
+      </select>
+    </div>
+  
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cartTotal">৳0</span>
+    </div>
+    <a id="checkoutBtn" href="#" target="_blank" class="checkout-btn">Checkout via WhatsApp</a>
+  </div>
+  
+</div>
+
+
+<!-- Shop Section -->
+<section class="shop-section">
+    <div class="container">
+  
+      <!-- Header -->
+      <div class="shop-header animate-on-scroll">
+        <h2>Shop Bangles</h2>
+        <p>Handcrafted designs made to elevate your everyday style.</p>
+      </div>
+      
+<!-- Filter Section -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<div class="shop-filters">
+  <div class="custom-dropdown" id="customDropdown">
+    <button type="button" class="dropdown-btn" id="filterBtn">
+      <span>Bangle</span>
+      <i class="bi bi-arrow-down"></i>
+    </button>
+
+    <div class="dropdown-menu" id="filterMenu">
+      <a href="Earring.html">Earring</a>
+      <a href="Ring.html">Ring</a>
+      <a href="Necklace.html">Necklace</a>
+      <a href="HomeDecor.html">Home Decor</a>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Grid -->
+      <div class="shop-grid">
+  
+        <!-- Product -->
+        <div class="shop-card animate-on-scroll">
+          <a href="Mirror_Blossom.html"><img src="Image/Mirror Blossom/1.jpg" alt="Mirror Blossom"></a>
+          <div class="shop-info">
+            <h4>Mirror Blossom</h4>
+            <span class="price">৳300</span>
+            <button class="add-to-cart" data-name="Mirror Blossom" data-price="300">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+  
+        <div class="shop-card animate-on-scroll">
+          <a href="Olive & Sand.html"><img src="Image/Olive And Sand/1.jpg" alt="Olive & Sand"></a>
+          <div class="shop-info">
+            <h4>Olive & Sand</h4>
+            <span class="price">৳400</span>
+            <button class="add-to-cart" data-name="Olive & Sand" data-price="400">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+  
+        <div class="shop-card animate-on-scroll">
+          <a href="Royal Gleam.html"><img src="Image/Royal Gleam/1.jpg" alt="Royal Gleam"></a>
+          <div class="shop-info">
+            <h4>Royal Gleam</h4>
+            <span class="price">৳400</span>
+            <button class="add-to-cart" data-name="Royal Gleam" data-price="400">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+  
+        <div class="shop-card animate-on-scroll">
+          <a href="Rosy Shell.html"><img src="Image/Rosy Shell/1.jpg" alt="Rosy Shell"></a>
+          <div class="shop-info">
+            <h4>Rosy Shell</h4>
+            <span class="price">৳250</span>
+            <button class="add-to-cart" data-name="Rosy Shell" data-price="250">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="shop-card animate-on-scroll">
+          <a href="Nironjon.html"><img src="Image/Nironjon/1.jpg" alt="Nironjon"></a>
+          <div class="shop-info">
+            <h4>Nironjon</h4>
+            <span class="price">৳300</span>
+            <button class="add-to-cart" data-name="Nironjon" data-price="300">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="shop-card animate-on-scroll">
+          <a href="Royal Radiance.html"><img src="Image/Royal Radiance/1.jpg" alt="Royal Radiance"></a>
+          <div class="shop-info">
+            <h4>Royal Radiance</h4>
+            <span class="price">৳250</span>
+            <button class="add-to-cart" data-name="Royal Radiance" data-price="250">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="shop-card animate-on-scroll">
+          <a href="Velvet Petal.html"><img src="Image/Velvet Petal/1.jpg" alt="Velvet Petal"></a>
+          <div class="shop-info">
+            <h4>Velvet Petal</h4>
+            <span class="price">৳650</span>
+            <button class="add-to-cart" data-name="Velvet Petal" data-price="650">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="shop-card animate-on-scroll">
+          <a href="Rustwood Shine.html"><img src="Image/Rustwood Shine/1.jpg" alt="Rustwood Shine"></a>
+          <div class="shop-info">
+            <h4>Rustwood Shine</h4>
+            <span class="price">৳200</span>
+            <button class="add-to-cart" data-name="Rustwood Shine" data-price="200">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="shop-card animate-on-scroll">
+          <a href="Crimson Stitch.html"><img src="Image/Crimson Stitch/1.jpg" alt="Crimson Stitch"></a>
+          <div class="shop-info">
+            <h4>Crimson Stitch</h4>
+            <span class="price">৳250</span>
+            <button class="add-to-cart" data-name="Crimson Stitch" data-price="250">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="shop-card animate-on-scroll">
+          <a href="Lace & Love.html"><img src="Image/Lace & Love/1.jpg" alt="Lace & Love"></a>
+          <div class="shop-info">
+            <h4>Lace & Love</h4>
+            <span class="price">৳350</span>
+            <button class="add-to-cart" data-name="Lace & Love" data-price="350">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="shop-card animate-on-scroll">
+          <a href="Neel Rotno.html"><img src="Image/Neel Rotno/2.jpg" alt="Neel Rotno"></a>
+          <div class="shop-info">
+            <h4>Neel Rotno</h4>
+            <span class="price">৳250</span>
+            <button class="add-to-cart" data-name="Neel Rotno" data-price="250">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="shop-card animate-on-scroll">
+          <a href="Rajwadi Silk.html"><img src="Image/Rajwadi Silk/1.jpg" alt="Rajwadi Silk"></a>
+          <div class="shop-info">
+            <h4>Rajwadi Silk</h4>
+            <span class="price">৳250</span>
+            <button class="add-to-cart" data-name="Rajwadi Silk" data-price="250">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+</section>
+
+<!-- Pagination -->
+<div class="pagination-wrapper animate-on-scroll">
+
+  <button class="page-arrow prev" disabled aria-disabled="true" aria-label="Previous">‹</button>
+
+  <div class="page-numbers">
+    <a href=""><span class="page-number active" data-page="1">1</span></a>
+    <a href="Shop2_Bangle.html"><span class="page-number" data-page="2">2</span></a>
+  </div>
+
+  <a href="Shop2_Bangle.html"><button class="page-arrow next" aria-label="Next">›</button></a>
+
+</div>
+
+<!-- Footer Section -->
+<footer class="footer glass">
+  <div class="container">
+    <div class="footer-container">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <h2>Alonkarbindu.</h2>
+      </div>
+
+      <!-- Navigation -->
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <a href="Collection.html">Collection</a>
+        <a href="Shop_Bangle.html">Product</a>
+        <a href="About.html">About</a>
+      </div>
+
+      <!-- Info -->
+      <div class="footer-column">
+        <h4>Info</h4>
+        <a href="#">News</a>
+        <a href="Contact.html">Contact</a>
+        <a href="#">Support</a>
+      </div>
+
+      <!-- Social -->
+      <div class="footer-column">
+        <h4>Social</h4>
+        <a href="https://www.facebook.com/profile.php?id=61579115111554" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/_alonkarbindu_/?hl=en" target="_blank">Instagram</a>
+        <a href="#">Pinterest</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="footer-bottom">
+      <p>© 2026 Alonkarbindu. All rights reserved</p>
+      <p>Design by Adi</p>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
